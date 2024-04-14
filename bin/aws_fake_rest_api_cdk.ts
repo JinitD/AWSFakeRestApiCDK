@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { FakeApiStack } from '../lib/fake-api-stack';
+import { AwsFakeRestApiCdkStack } from '../lib/aws_fake_rest_api_cdk-stack';
 
 const app = new cdk.App();
-new FakeApiStack(app, 'FakeApiStack', {
+new AwsFakeRestApiCdkStack(app, 'AwsFakeRestApiCdkStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
